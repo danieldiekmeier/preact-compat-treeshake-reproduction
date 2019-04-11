@@ -2,6 +2,8 @@
 
 This is a reproduction for https://github.com/developit/preact/issues/1529
 
+## Without importing `memo`
+
 ```sh
 npx webpack -p without-memo.js
 ```
@@ -20,6 +22,8 @@ Entrypoint main = main.js
     | ./without-memo.js 139 bytes [built]
     |     + 1 hidden module
 ```
+
+## With importing `memo`
 
 ```sh
 npx webpack -p with-memo.js
